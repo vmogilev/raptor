@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/InVisionApp/hound-agent/job"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/vmogilev/raptor/job"
 )
 
 func main() {
