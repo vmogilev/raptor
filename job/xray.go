@@ -16,7 +16,7 @@ func (a *app) init() {
 	a.ctx = ctxINIT
 
 	// annotate xray with our values so it's easy to filter:
-	//	annotation.RuleID = "mysql-host-event"
+	//	annotation.RuleID = "one"
 	//	annotation.RequestID = "72861f13-3ec2-11e8-b266-3fbfa0ef4b01"
 	a.annotate("RuleID", a.s3Event.RuleID)
 	a.annotate("RequestID", a.s3Event.RequestID)
