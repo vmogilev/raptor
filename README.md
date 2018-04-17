@@ -32,3 +32,12 @@ aws_secret_access_key=****************************************
 aws_access_key_id=********************
 aws_secret_access_key=****************************************
 ```
+
+## To-Do
+
+1. Setup DLQ Resource. AWS Lambda will automatically retry failed executions for asynchronous invocations.  But to really make it bulletproof, you can forward payloads that were not processed to a dead-letter queue (DLQ), such as an SQS queue or an SNS topic.
+2. Setup CloudWatch Alarm to monitor execution errors.
+3. Incorporate all of the above in the Terraform module.
+4. Move Terraform state file to S3.
+
+PRs are welcome.
